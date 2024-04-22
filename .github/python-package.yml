@@ -19,28 +19,23 @@ jobs:
         channel-priority: true
         activate-environment: standard-setup
 
-    - name: Add conda to system path
-      run: |
-        echo $CONDA/bin >> $GITHUB_PATH
-
     - name: Install and Activate Dependencies
-      shell: bash -l {0}
-      run: |
+      shell: bash -l {0}  
         echo "Current Python version:"
         python --version
         echo "Updating environment:"
         conda env update --file environment.yml --name standard-setup
-        echo "Activating environment:"
-        source activate standard-setup
         echo "Checking Streamlit Installation:"
         streamlit --version
 
     - name: Lint with flake8
+      shell: bash -l {0}
       run: |
         echo "Running flake8 for linting:"
         flake8 .
 
     - name: Test with pytest
+      shell: bash -l {0}
       run: |
         echo "Running tests with pytest:"
         pytest
