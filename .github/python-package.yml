@@ -24,6 +24,7 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
 
     - name: Install and Activate Dependencies
+      shell: bash -l {0}
       run: |
         echo "Current Python version:"
         python --version
