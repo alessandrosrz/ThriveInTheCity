@@ -17,3 +17,4 @@ requests
 folium
 beautifulsoup4
 lxml
+joblib
