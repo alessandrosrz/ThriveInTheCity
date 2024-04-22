@@ -22,6 +22,8 @@ Finally, run the application using Streamlit. The application's entry point is `
 ```bash
 streamlit run app.py
 ```
+To use the deployed web application:
+https://thriveinthecity.streamlit.app/
 
 # Python Imports in the Project
 The following Python libraries are used throughout the project:
