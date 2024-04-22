@@ -31,9 +31,9 @@ jobs:
         echo "Rechecking Python version:"
         python --version
         echo "Updating environment:"
-        conda env update --file environment.yml --name base
+        conda env update --file environment.yml --name standard-setup
         echo "Activating environment:"
-        source activate base
+        source activate standard-setup
 
     - name: Lint with flake8
       run: |
