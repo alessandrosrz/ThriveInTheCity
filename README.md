@@ -16,63 +16,11 @@ Install all dependencies listed in the requirements.txt file using pip and envir
 ```bash
 pip install -r requirements.txt
 ```
-For Conda environments:
-```bash
-conda env create -f environment.yml
-conda activate standard-setup
-```
 
 ## Step 3: Run the Application
 Finally, run the application using Streamlit. The application's entry point is `app.py`:
 ```bash
 streamlit run app.py
-```
-
-# External Dependencies
-Here are the packages from `environment.yml` used by Conda:
-```yaml
-name: standard-setup
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - python=3.10
-  - numpy
-  - pandas
-  - matplotlib
-  - seaborn
-  - scikit-learn
-  - scipy
-  - jupyter
-  - notebook
-  - ipython
-  - ipykernel
-  - statsmodels
-  - folium
-  - pip
-  - pip:
-    - tensorflow
-    - keras
-    - plotly
-    - "lxml"
-    - beautifulsoup4
-    - requests
-    - folium  
-    - opencage  
-```
-
-And here are the Python packages from `requirements.txt`:
-```plaintext
-# local package
--e .
-
-# external requirements
-click
-Sphinx
-coverage
-awscli
-flake8
-python-dotenv>=0.5.1
 ```
 
 # Python Imports in the Project
@@ -97,7 +45,7 @@ The following Python libraries are used throughout the project:
 
 The project is organized into several directories and files:
 
-- `app.py`: The main Streamlit application script that can be launched with the command `streamlit run app.py`.
+- `app.py`: The main Streamlit application script that can be launched with the command.
 - `data/`: This directory contains all the data used in the project.
   - `evaluation_images/`: Contains images used for evaluating models or results.
   - `processed/`: Includes processed data files that have been cleaned and transformed for analysis.
@@ -114,7 +62,7 @@ The project is organized into several directories and files:
     - `DataCleaningCrimeLevel.py`
     - ... (and other data cleaning scripts)
   - `UI/`: The user interface code for the web application.
-- `environment.yml`: Conda environment file to set up the Python environment with all the necessary dependencies.
+- `venv/`: The directory for the virtual environment containing Python binaries and the installed packages.
 - `requirements.txt`: Lists the Python dependencies for pip to install.
 
 Run the application using the following command:

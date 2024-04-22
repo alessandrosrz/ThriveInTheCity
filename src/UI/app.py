@@ -7,8 +7,12 @@ import joblib
 import pydeck as pdk
 import matplotlib.pyplot as plt
 
-# Define absolute paths to the model and data folders
+# Define absolute paths to the model and data folders to run it in localhost
 # base_dir = "/Users/alessandrosuarez_/Desktop/lastYRofUniShii/IndividualProjectIN3007/Deliverables/Workspace"
+# models_folder = os.path.join(base_dir,"models")
+# data_folder = os.path.join(base_dir,"data", "processed")
+
+# Define absolute paths to the model and data folders to run it when app is deployed
 models_folder = os.path.join("models")
 data_folder = os.path.join("data", "processed")
 
