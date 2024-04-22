@@ -15,7 +15,6 @@ dependencies:
   - ipython
   - ipykernel
   - statsmodels
-  - folium
   - pip
   - pip:
     - tensorflow
