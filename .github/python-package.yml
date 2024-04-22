@@ -45,3 +45,9 @@ jobs:
         echo "Running tests with pytest:"
         conda install -y pytest
         pytest
+
+    - name: Install Streamlit and Run
+      run: |
+        conda activate base
+        pip install streamlit
+        streamlit run src/UI/app.py
