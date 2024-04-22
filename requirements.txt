@@ -10,8 +10,6 @@ jupyter
 notebook
 ipython
 ipykernel
-pip
-pip:
 tensorflow
 keras
 streamlit
