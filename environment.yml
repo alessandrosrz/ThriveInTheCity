@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.10
+  - python=3.12
   - numpy
   - pandas
   - matplotlib
@@ -16,13 +16,15 @@ dependencies:
   - ipykernel
   - statsmodels
   - folium
-  - pip
+  - geopandas
   - pip:
+    - streamlit
     - tensorflow
     - keras
     - plotly
     - "lxml"
     - beautifulsoup4
     - requests
-    - folium  
-    - opencage  
+    - opencage
+    - geopy
+    - pydeck
